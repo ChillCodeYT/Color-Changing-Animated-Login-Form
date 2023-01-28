@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--CSS-->
+    <link rel="stylesheet" href="style.css">
+
+    <title>Color Changing Login Form</title>
+</head>
+<body>
+    
+    <div class="login">
+        <h2 id="text">Login</h2>
+        <div class="inputBox">
+            <legend>Username</legend>
+            <input type="text">
+        </div>
+        <div class="inputBox">
+            <legend>Password</legend>
+            <input type="password">
+        </div>
+        <div class="inputBox">
+            <input type="submit" id="btn-login" value="Submit">
+        </div>
+        <div class="group">
+            <a href="#">Forget password</a>
+            <a href="#">Singup</a>
+        </div>
+    </div>
+    <div class="colors">
+        <span class="active" onclick="changeColor('#1dd1a1')" style="--color:#1dd1a1"></span>
+        <span style="--color:#ff6b6b" onclick="changeColor('#ff6b6b')"></span>
+        <span style="--color:#2e86de" onclick="changeColor('#2e86de')"></span>
+        <span style="--color:#f368e0" onclick="changeColor('#f368e0')"></span>
+        <span style="--color:#ff9f43" onclick="changeColor('#ff9f43')"></span>
+    </div>
+
+    <script>
+
+        let btn = document.getElementById('btn-login');
+
+        function changeColor(color) {
+            document.body.style.background = color
+
+            btn.style.background = color
+
+            document.querySelectorAll('span').forEach(function(item) {
+                item.classList.remove('active');
+
+                event.target.classList.add('active');
+            })
+        }
+
+    </script>
+</body>
+</html>

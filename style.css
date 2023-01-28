@@ -1,0 +1,135 @@
+/* Google Fonts - Poppins */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #1dd1a1;
+    transition: 300ms;
+}
+
+.login {
+    position: relative;
+    padding: 50px;
+    background-color: #2C2F35;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border-radius: 20px;
+    border: 2px solid grey;
+    transition: 300ms;
+}
+
+.login:hover {
+    border: 2px solid transparent;
+    box-shadow:  0 20px 40px -5px rgb(0, 0, 0, 0.30);
+    transform: translateY(-10px);
+}
+
+.login h2 {
+    font-weight: 500;
+    line-height:  1em;
+    padding-left: 10px;
+    transition: 0.5s;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.login .inputBox {
+    position: relative;
+}
+
+.login .inputBox input {
+    position: relative;
+    width: 100%;
+    padding: 10px 15px;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    background-color: #515966;
+    font-size: 1em;
+    color: #fff;
+}
+
+.login .inputBox legend {
+    color: #515966;
+    padding-left: 10px;
+}
+
+.login .inputBox btn-login {
+    border: none;
+    background-color: #1dd1a1;
+    color: #fff;
+    transition: 300ms;
+    font-size: 1.1em;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.login .inputBox btn-login:hover {
+    filter: brightness(80%);
+}
+
+.login .group {
+    display: flex;
+    justify-content: space-between;
+}
+
+.login .group a {
+    color: #515966;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.login .group a:hover {
+    text-decoration: underline;
+}
+
+.colors {
+    position: absolute;
+    right: 15px;
+    padding: 10px;
+    background: #2C2F35;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 20px;
+    transition: 300ms;
+    box-shadow: 0px 10px 40px -5px rgb(0, 0, 0, 0.30);
+}
+
+.colors:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 10px 40px -5px rgba(0, 0, 0, 0.30);
+}
+
+.colors span {
+    position: relative;
+    width: 20px;
+    height: 20px;
+    background-color: var(--color);
+    margin: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.colors .active {
+    border: 2px solid #fff;
+    scale: 1.5;
+}
+
+
+
+
